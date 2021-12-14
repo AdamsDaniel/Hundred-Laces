@@ -1,0 +1,139 @@
+html, body {
+    overflow-x: hidden;
+    scrollbar-width: none;
+    min-height: 200%;
+}body::-webkit-scrollbar{
+    display: none;
+}
+
+.back-white{
+    background-color: white;
+}
+
+#black{
+    color:black;
+}
+
+.uk-navbar{
+    margin-top:10px;
+    margin-bottom: 90px;
+}
+
+.uk-container h1{
+    color:black;
+    font-size: 35px;
+    line-height: normal;
+}
+
+#hidden{
+    display: none;
+}
+
+/* imagem */
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.subtitulo-cards{
+    font-size: 18px;
+    color: black;
+}
+
+.imgcard{
+    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 0.1px;
+}
+
+.middle-text{
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+.adicionais-text{
+    margin-top: 30px;
+}
+
+
+.las span, .restaura{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+.margin20{
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+/* .border-left-right{
+    border-left: rgba(0, 0, 0, 0.281) 1px solid;
+    border-right: rgba(0, 0, 0, 0.281) 1px solid;  
+}
+.border-right{
+    border-right: rgba(0, 0, 0, 0.281) 1px solid;
+}
+.border-top-ks{
+    border-top: rgba(0, 0, 0, 0.281) 1px solid !important;
+    border-bottom: rgba(0, 0, 0, 0.281) 1px solid !important;
+} */
+
+
+@media only screen and (min-width: 374px) and (max-width: 1980px) {
+    tr .first-table {
+      padding-bottom: 35px;
+    }
+  }
+
+@media only screen and (max-width:462px)  {
+    .display-none{
+        display:none;
+    }
+}
+
+@media only screen and (min-width:463px)  {
+    .display-none-437{
+        display:none;
+    }
+
+}
+
+  
+@media only screen and (max-width: 639px) {
+    .uk-container h1 {
+      margin-left: 15px;
+    }
+  }
+
+@media only screen and (min-width: 945px) {
+    #ul-cards {
+        margin-left: -65.5%;
+    }
+  }
+
+@media only screen and (min-width: 945px) and (max-width: 1259px) {
+    #ul-cards {
+        margin-left: -74%;
+    }
+  }
+
+@media only screen and (min-width: 1600px) {
+    #ul-cards {
+        margin-left: -74.5%;
+    }
+  }
+@media only screen and (min-width: 1302px) {
+    #ul-cards {
+        margin-left: -74.5%;
+    }
+  }
+@media only screen and (min-width: 1260px) {
+    #ul-cards {
+        margin-left: -74.3%;
+    }
+  }
+
+

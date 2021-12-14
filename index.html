@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/icons.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
+        integrity="sha384-B0Khv7WBogMvVVsIEP44InBwquc3fXe8f1z4WYpY5m/4C4Ds1vp9aWpN9z+GkgTg" crossorigin="anonymous">
+
+    <!-- pack de icones -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+        integrity="sha384-snzOGIbz+keYJBq8ozkYChzFE6HnRT5PIEwo25BGyLtpC4G3qF/YAP4vRkinYp7+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+        integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+
+    <!-- icone titulo -->
+    <link rel="shortcut icon" type="imagex/png" href="/img/icone-teste.ico">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        integrity="sha384-h0HFp1r+Vq/1x7modzqZaqvMelro9pikGIVdLDs045XCE8IfHpIQDcGPiBNslfXT" crossorigin="anonymous">
+
+    <title>Hundred Laces</title>
+</head>
+
+<body>
+
+    <div class="">
+
+        <div class="uk-navbar uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-center-left">
+                    <div><a class="icones uk-link-reset" rel="noopener noreferrer"
+                            href="https://api.whatsapp.com/send?phone=+55%20(41)%209%208767-0266" target="_blank"
+                            title="Entre em contato pelo Whatsapp"><span class="la la-whatsapp "></span></a></div>
+                </div>
+                <div class="uk-navbar-center-right">
+                    <div> <a class="icones uk-link-reset" rel="noopener noreferrer" target="_blank"
+                            href="https://www.instagram.com/hundredlaces/" title="Acesse  nosso Instagram"><span
+                                class="la la-instagram" style="padding-right: 8.5px;"></span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="cabecalho uk-container">
+        <section class="icones-section ">
+            <a class="icones uk-link-reset" href="#!" title="Entre em contato pelo Whatsapp"><span
+                    class="la la-whatsapp "></span></a>
+            <a class="icones uk-link-reset" href="#!" title="Acesse  nosso Instagram"><span
+                    class="la la-instagram"></span></a>
+        </section>
+    </div> -->
+
+        <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+            data-src="img/cinza.jpg" uk-img>
+            <h1 class="uk-text-bolder uk-text-capitalize uk-text-center uk-text-middle">Hundred Laces</h1>
+        </div>
+
+        <div class="uk-section uk-section-muted uk-container middle-text">
+            <div class="uk-container">
+                <h1 class="uk-text-bolder uk-text-left uk-text-middle uk-text-break">Especialistas em limpeza premium e
+                    restauração de sneakers. Renovando a cena de streetwear em Curitiba! </h1>
+            </div>
+        </div>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+            <ul class="uk-slider-items uk-grid" id='ul-cards'>
+                <li class="uk-width-3-4 width-cards" style="width: 305px; padding-left: 0px;">
+                    <div class="card border-dark bg-dark mb-3" style="width: 18rem; height: 451px;">
+                        <div class="uk-panel">
+                            <img src="img/img1.jpeg" class="imgcard" alt="">
+                            <div class="uk-position-center uk-panel">
+                                <h1>1</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold" style="font-size: 20px;">PACK LIMPEZA ESSENTIAL -
+                                $ 49,90</h5>
+                            <p class="card-text back-dark text-white" style="margin-top: 21px;margin-bottom: 67px;">
+                                Indicado para o dia a dia.</p>
+                            <a href="#"
+                                class="uk-button uk-button-default uk-button-small text-white border-white stretched-link"
+                                type="button" uk-toggle="target: #modal-essential">MAIS INFORMAÇÕES</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="uk-width-3-4" style="width: 305px; padding-left: 0px;">
+                    <div class="card border-dark bg-dark mb-3" style="width: 18rem; height: 451px;">
+                        <div class="uk-panel">
+                            <img src="img/img2.jpeg" class="imgcard" alt="">
+                            <div class="uk-position-center uk-panel">
+                                <h1>2</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold" style="font-size: 20px;">PACK LIMPEZA
+                                ALL-IMPORTANT - $ 54,90</h5>
+                            <p class="card-text back-dark text-white" style="margin-top: 21px;margin-bottom: 43px;">
+                                Indicado para calçados de suede, camurça e nobuck.</p>
+                            <a href="#"
+                                class="uk-button uk-button-default uk-button-small text-white border-white stretched-link"
+                                type="button" uk-toggle="target: #modal-important">MAIS INFORMAÇÕES</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="uk-width-3-4" style="width: 305px; padding-left: 0px;">
+                    <div class="card border-dark bg-dark mb-3" style="width: 18rem; height: 451px;">
+                        <div class="uk-panel">
+                            <img src="img/img3.jpeg" class="imgcard" alt="">
+                            <div class="uk-position-center uk-panel">
+                                <h1>3</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold" style="font-size: 20px; ">PACK DE LIMPEZA DETAIL -
+                                $ 69,90</h5>
+                            <p class="card-text back-dark text-white" style="margin-top: 21px;margin-bottom: 43px;">
+                                Limpeza profunda e completa com grande atenção aos detalhes.</p>
+                            <a href="#"
+                                class="uk-button uk-button-default uk-button-small text-white border-white stretched-link"
+                                type="button" uk-toggle="target: #modal-detail">MAIS INFORMAÇÕES</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="uk-width-3-4" style="width: 305px; padding-left: 0px;">
+                    <div class="card border-dark bg-dark mb-3" style="width: 18rem; height: 451px;">
+                        <div class="uk-panel">
+                            <img src="img/img4.jpeg" class="imgcard" alt="">
+                            <div class="uk-position-center uk-panel">
+                                <h1>4</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold " style="font-size: 20px;">PACK DE LIMPEZA DELUXE -
+                                $ 89,90</h5>
+                            <p class="card-text back-dark text-white">A mais completa em cuidado, higienização e atenção
+                                aos detalhes! </p>
+                            <a href="#"
+                                class="uk-button uk-button-default uk-button-small text-white border-white stretched-link"
+                                type="button" uk-toggle="target: #modal-deluxe">MAIS INFORMAÇÕES</a>
+
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" title="previous" href="#"
+                uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" title="next" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- Star Modals first container -->
+    <div id="modal-essential" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" title="close button" type="button" uk-close></button>
+            <h2 class="uk-modal-title">PACK DE LIMPEZA ESSENTIAL</h2>
+            <p>Limpeza das partes superiores,
+                entressola e sola + limpeza da parte
+                interna + limpeza do cadarço +
+                desodorização + impermeabilização +
+                finalização exclusiva brush cleaning.</p>
+            <p class="uk-text-right">
+                <a class="uk-button uk-button-default" href="https://www.google.com" title="MAIS INFORMAÇÕES"
+                    target="_blank" type="button" rel="noopener noreferrer">Contato</a>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-important" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" title="close button" type="button" uk-close></button>
+            <h2 class="uk-modal-title">PACK DE LIMPEZA IMPORTANT</h2>
+            <p>Limpeza das partes superiores,
+                entressola e sola + limpeza da parte
+                interna + limpeza do cadarço +
+                desodorização + impermeabilização +
+                finalização exclusiva brush cleaning.</p>
+            <p class="uk-text-right">
+                <a class="uk-button uk-button-default" href="https://www.google.com" title="entre em contato"
+                    target="_blank" type="button" rel="noopener noreferrer">Contato</a>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-detail" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" title="close button" type="button" uk-close></button>
+            <h2 class="uk-modal-title">PACK DE LIMPEZA DETAIL</h2>
+            <p>Limpeza das partes superiores,
+                entressola e sola + limpeza da parte
+                interna + limpeza do cadarço +
+                desodorização + impermeabilização +
+                finalização exclusiva brush cleaning.</p>
+            <p class="uk-text-right">
+                <a class="uk-button uk-button-default" href="https://www.google.com" title="entre em contato"
+                    target="_blank" type="button" rel="noopener noreferrer">Contato</a>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-deluxe" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" title="close button" type="button" uk-close></button>
+            <h2 class="uk-modal-title">PACK DE LIMPEZA DELUXE</h2>
+            <p>Detalhamento minucioso e limpeza profunda de todo o tênis + limpeza do cadarço + higienização a vapor da
+                palmilha e parte interior + desodorização + impermeabilização + revitalização da entressola amarelada +
+                finalização exclusiva brush cleaning.</p>
+            <p class="uk-text-right">
+                <a class="uk-button uk-button-default" href="https://www.google.com" title="entre em contato"
+                    target="_blank" type="button" rel="noopener noreferrer">Contato</a>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+            </p>
+        </div>
+    </div>
+    <!-- End Modals -->
+
+    <div class="  uk-container adicionais-text">
+        <div class="uk-container">
+            <h1 class="uk-text-bolder uk-text-center uk-text-break uk-text-lead">Serviços Adicionais</h1>
+        </div>
+    </div>
+
+
+    <div class="uk-container display-none">
+        <table class="uk-table display-none">
+            <thead>
+                <tr>
+                    <th
+                        class=" uk-text-middle uk-background-muted fw-bold text-dark border-left-right border-top-ks firt-table">
+                        <i class="las la-brush" style="font-size: 23px; "><span style="font-size: 15px;"> ADICIONAIS
+                                LIMPEZA</span></i></th>
+                    <th
+                        class="uk-text-middle uk-background-muted fw-bold text-dark border-left-right border-top-ks second-table">
+                        <i class="las la-shield-alt" style="font-size:23px;"><span style="font-size: 15px;">
+                                PROTEÇÃO</span></i></th>
+                    <th
+                        class="uk-text-middle uk-background-muted fw-bold text-dark border-left-right border-top-ks third-table">
+                        <i class="lar la-star" style="font-size:23px;"><span style="font-size: 15px; font-weight: 900;"
+                                class=" text-dark restaura">
+                                RESTAURAÇÃO</span></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border-left-right"><i class="las la-check"></i> Aplicação de solução antimofo <span class="badge rounded-pill bg-dark">R$ 9,90</span></td>
+                    <td class="border-left-right second-table"><i class="las la-check"></i> Hidratação de couro e
+                        courino <span class="badge rounded-pill bg-dark">R$ 9,90</span></td>
+                    <td class="border-left-right third-table"><i class="las la-check"></i> Revitalização e clareamento
+                        da entressola amarelada <span class="badge rounded-pill bg-dark">R$ 18,90</span></td>
+                </tr>
+                <tr>
+                    <td class="border-left-right"><i class="las la-check"></i> Higienização a vapor da palmilha e parte
+                        interior <span class="badge rounded-pill bg-dark">R$ 15,90</span></td>
+                    <td class="border-left-right second-table"><i class="las la-check"></i> Impermeabilização <span class="badge rounded-pill bg-dark">R$ 14,90</span> </td>
+                    <td class="border-left-right third-table"><i class="las la-check"></i> Reforma da cola da sola <span class="badge rounded-pill bg-dark">R$ 14,90</span></td>
+                </tr>
+                <tr>
+                    <td class=""></td>
+                    <td class="border-left-right second-table"><i class="las la-check"></i> Desodorização <span class="badge rounded-pill bg-dark">R$ 8,90</span></td>
+                    <td class="border-left-right third-table"><i class="las la-check"></i> Revitalização e hidratação de
+                        camurça e suede <span class="badge rounded-pill bg-dark">R$ 14,90</span></td>
+                </tr>
+                <tr>
+                    <td class=""></td>
+                    <td class="border-right second-table"></td>
+                    <td class="border-left-right third-table"><i class="las la-check"></i> Troca de cadarço <span class="badge rounded-pill bg-dark">R$ 9,90</span></td>
+                </tr>
+                <tr>
+                    <td class=""></td>
+                    <td class="border-right second-table"></td>
+                    <td class="border-left-right third-table"><i class="las la-check"></i> Reforma formato do tênis <span class="badge rounded-pill bg-dark">R$ 12,90</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <div class="display-none-437">
+        <div class="uk-container " style="margin-bottom:-97px;">
+            <table class="uk-table ">
+                <thead>
+                    <tr>
+                        <th
+                            class=" uk-text-middle uk-background-muted fw-bold text-dark border-left-right firt-table border-top-ks">
+                            <i class="las la-brush" style="font-size: 23px;"><span style="font-size: 15px;"> ADICIONAIS
+                                    LIMPEZA</span></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-left-right"><i class="las la-check"></i> Aplicação de solução antimofo <span class="badge rounded-pill bg-dark">R$ 9,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right"><i class="las la-check"></i> Higienização a vapor da palmilha e
+                            parte interior <span class="badge rounded-pill bg-dark">R$ 15,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class=""></td>
+                    </tr>
+                    <tr>
+                        <td class=""></td>
+                    </tr>
+                    <tr>
+                        <td class=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="uk-container " style="margin-bottom: -64px;">
+            <table class="uk-table ">
+                <thead>
+                    <tr>
+                        <th
+                            class="uk-text-middle uk-background-muted fw-bold text-dark border-left-right second-table border-top-ks">
+                            <i class="las la-shield-alt" style="font-size:23px;"><span style="font-size: 15px;">
+                                    PROTEÇÃO</span></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-left-right second-table"><i class="las la-check"></i> Hidratação de couro e
+                            courino <span class="badge rounded-pill bg-dark">R$ 9,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right second-table"><i class="las la-check"></i> Impermeabilização <span class="badge rounded-pill bg-dark">R$ 14,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right second-table"><i class="las la-check"></i> Desodorização <span class="badge rounded-pill bg-dark">R$ 8,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border-right second-table"></td>
+                    </tr>
+                    <tr>
+                        <td class="border-right second-table"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="uk-container ">
+            <table class="uk-table ">
+                <thead>
+                    <tr>
+                        <th
+                            class="uk-text-middle uk-background-muted fw-bold text-dark border-left-right third-table border-top-ks font-icon">
+                            <i class="lar la-star font-icon" style="font-size:23px;"><span style="font-size: 15px; font-weight: 900;"
+                                    class="font-icon text-dark restaura">
+                                    RESTAURAÇÃO</span></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-left-right third-table"><i class="las la-check"></i> Revitalização e
+                            clareamento da entressola amarelada <span class="badge rounded-pill bg-dark">R$ 18,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right third-table"><i class="las la-check"></i> Reforma da cola da sola <span class="badge rounded-pill bg-dark">R$ 14,90</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right third-table"><i class="las la-check"></i> Revitalização e
+                            hidratação de camurça e suede <span class="badge rounded-pill bg-dark">R$ 14,90</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right third-table"><i class="las la-check"></i> Troca de cadarço <span class="badge rounded-pill bg-dark">R$ 9,90</span> </td>
+                    </tr>
+                    <tr>
+                        <td class="border-left-right third-table"><i class="las la-check"></i> Reforma formato do tênis <span class="badge rounded-pill bg-dark">R$ 12,90
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"
+        integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous">
+    </script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"
+        integrity="sha384-gb2vijc9tUu23rRNH2q1Ap0/xazsrZ2ooscmDsRFWNLhRF1f1gbRWLi5vo8pzgr/" crossorigin="anonymous">
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
