@@ -1,4 +1,3 @@
 # Hundred-Laces
 
-It's a test site. 
-Just for my own learning.
+Projeto de criação de site com Bootstrap e UIkit CSS !
